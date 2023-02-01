@@ -35,3 +35,15 @@ nav ul li a {
   width: 6rem;
   font-weight: 600;
 }
+
+footer {
+  background-color: #e2dddd;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 20px;
+}

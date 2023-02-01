@@ -3,15 +3,16 @@ import { BrowserRouter, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import React from "react";
-import Navigation from "./components/Navigation/Navigation";
+import Layout from "./Layout/Layout";
 
 function App() {
   return (
     <BrowserRouter>
       <React.StrictMode>
-        <Navigation />
-        <Route path="/about-us" component={AboutUsPage} />
-        <Route exact path="/" component={HomePage} />
+        <Layout>
+          <Route path="/about-us" component={AboutUsPage} />
+          <Route exact path="/" component={HomePage} />
+        </Layout>
       </React.StrictMode>
     </BrowserRouter>
   );
