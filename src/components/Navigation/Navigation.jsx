@@ -13,6 +13,9 @@ const Navigation = (props) => {
         <li>
           <Link to="/profile">Profile</Link>
         </li>
+        <li>
+          <Link to="/blogs">Blog</Link>
+        </li>
       </ul>
     </nav>
   );
