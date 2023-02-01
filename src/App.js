@@ -1,18 +1,16 @@
 import "./App.css";
 import { Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import AboutUsPage from "./pages/AboutUsPage";
-import ProfilePage from "./pages/ProfilePage";
 import React from "react";
 import Layout from "./Layout/Layout";
+import routes from "./routes";
 
 function App() {
   return (
     <React.StrictMode>
       <Layout>
-        <Route path="/about-us" component={AboutUsPage} />
-        <Route path="/profile" component={ProfilePage} />
-        <Route exact path="/" component={HomePage} />
+        {routes.map((route, index) => {
+          return <Route key={index} {...route} />;
+        })}
       </Layout>
     </React.StrictMode>
   );
