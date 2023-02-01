@@ -1,7 +1,7 @@
 nav {
   width: 100%;
   height: 60px;
-  background-color: #e7e5e5;
+  background-color: #8ee4af;
 }
 
 nav ul {
@@ -15,12 +15,22 @@ nav ul {
   padding: 1rem;
 }
 
-nav ul li a:hover {
-  color: brown;
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #05386b;
+  background-color: #379683;
 }
 
 a {
   text-decoration: none;
   color: #333;
   transition: 0.15s;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 6rem;
 }
