@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = (props) => {
   return (
     <header>
       <nav>
@@ -17,4 +17,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default withRouter(Navigation);
