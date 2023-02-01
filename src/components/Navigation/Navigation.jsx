@@ -10,6 +10,9 @@ const Navigation = (props) => {
         <li>
           <Link to="/about-us">About Us</Link>
         </li>
+        <li>
+          <Link to="/profile">Profile</Link>
+        </li>
       </ul>
     </nav>
   );

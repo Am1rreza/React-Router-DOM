@@ -37,7 +37,8 @@ nav ul li a {
 }
 
 footer {
-  background-color: #e2dddd;
+  background-color: #edf5e1;
+  color: #05386b;
   position: fixed;
   bottom: 0;
   right: 0;
