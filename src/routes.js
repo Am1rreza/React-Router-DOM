@@ -9,7 +9,7 @@ import PostPage from "./pages/PostPage";
 const routes = [
   { path: "/blogs/:id", component: Blog },
   { path: "/blogs", component: BlogPage },
-  { path: "/post", component: PostPage },
+  { path: "/post/:id?", component: PostPage },
   { path: "/about-us", component: AboutUsPage },
   { path: "/profile", component: ProfilePage },
   { path: "/", component: HomePage, exact: true },
