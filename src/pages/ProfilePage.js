@@ -1,10 +1,15 @@
-import { Link } from "react-router-dom";
+import { Route } from "react-router-dom";
+import Dashboard from "../components/Dashboard/Dashboard";
+import Downloads from "../components/Downloads/Downloads";
+import Sidebar from "../components/Sidebar/Sidebar";
 
-const ProfilePage = (props) => {
+const ProfilePage = () => {
   return (
     <>
       <h2>Wellcome to the Profile Page</h2>
-      <Link to={"/"}>Go to the Home page</Link>
+      <Sidebar />
+      <Route path={"/profile/dashboard"} component={Dashboard} />
+      <Route path={"/profile/downloads"} component={Downloads} />
     </>
   );
 };

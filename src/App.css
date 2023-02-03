@@ -8,7 +8,7 @@ li {
   list-style: none;
 }
 
-nav ul {
+ul {
   height: 100%;
   width: 100%;
   display: flex;
@@ -19,8 +19,8 @@ nav ul {
   padding: 1rem;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
+ul li a:hover,
+ul li a:focus {
   color: #05386b;
   background-color: #5cdb95;
 }
@@ -31,7 +31,7 @@ a {
   transition: 0.15s;
 }
 
-nav ul li a {
+ul li a {
   display: block;
   text-align: center;
   padding: 0.5rem;
@@ -51,4 +51,18 @@ footer {
   padding: 1rem;
   font-weight: 700;
   font-size: 20px;
+}
+
+.aside {
+  background-color: #5cdb95;
+}
+
+.aside a {
+  width: 20rem;
+}
+
+.aside ul li a:hover,
+.aside ul li a:focus {
+  color: #05386b;
+  background-color: #edf5e1;
 }
