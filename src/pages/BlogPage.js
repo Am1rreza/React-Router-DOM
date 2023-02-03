@@ -13,7 +13,9 @@ const BlogPage = () => {
       {items.map((item) => {
         return (
           <li key={item.to}>
-            <Link to={item.to}>{item.name}</Link>
+            <Link to={{ pathname: item.to, search: "sort=name&age=20" }}>
+              {item.name}
+            </Link>
           </li>
         );
       })}
