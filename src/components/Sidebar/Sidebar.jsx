@@ -1,14 +1,18 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <aside className="aside">
       <ul>
         <li>
-          <Link to={"/profile/downloads"}>Go to the Downloads</Link>
+          <NavLink activeClassName="activeTab" to={"/profile/downloads"}>
+            Downloads
+          </NavLink>
         </li>
         <li>
-          <Link to={"/profile/dashboard"}>Go to the Dashboard</Link>
+          <NavLink activeClassName="activeTab" to={"/profile/dashboard"}>
+            Dashboard
+          </NavLink>
         </li>
       </ul>
     </aside>

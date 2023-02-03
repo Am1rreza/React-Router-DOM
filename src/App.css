@@ -19,8 +19,7 @@ ul {
   padding: 1rem;
 }
 
-ul li a:hover,
-ul li a:focus {
+ul li a:hover,.activeTab2 {
   color: #05386b;
   background-color: #5cdb95;
 }
@@ -62,7 +61,7 @@ footer {
 }
 
 .aside ul li a:hover,
-.aside ul li a:focus {
+.activeTab {
   color: #05386b;
   background-color: #edf5e1;
 }

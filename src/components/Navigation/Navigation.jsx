@@ -1,23 +1,33 @@
-import { Link, withRouter } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 
 const Navigation = (props) => {
   return (
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <NavLink activeClassName="activeTab2" to="/" exact>
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to="/about-us">About Us</Link>
+          <NavLink activeClassName="activeTab2" to="/about-us">
+            About Us
+          </NavLink>
         </li>
         <li>
-          <Link to="/profile">Profile</Link>
+          <NavLink activeClassName="activeTab2" to="/profile">
+            Profile
+          </NavLink>
         </li>
         <li>
-          <Link to="/blogs">Blog</Link>
+          <NavLink activeClassName="activeTab2" to="/blogs">
+            Blog
+          </NavLink>
         </li>
         <li>
-          <Link to="/post">Post</Link>
+          <NavLink activeClassName="activeTab2" to="/post">
+            Post
+          </NavLink>
         </li>
       </ul>
     </nav>
