@@ -7,13 +7,13 @@ import ProfilePage from "./pages/ProfilePage";
 import PostPage from "./pages/PostPage";
 
 const routes = [
-  { path: "/blogs/:id", component: Blog },
-  { path: "/blogs", component: BlogPage },
-  { path: "/post/:id?", component: PostPage },
-  { path: "/about-us", component: AboutUsPage },
-  { path: "/profile", component: ProfilePage },
-  { path: "/", component: HomePage, exact: true },
-  { component: NotFoundPage },
+  { path: "/blogs/:id", element: <Blog /> },
+  { path: "/blogs", element: <BlogPage /> },
+  { path: "/post/:id?", element: <PostPage /> },
+  { path: "/about-us", element: <AboutUsPage /> },
+  { path: "/profile", element: <ProfilePage /> },
+  { path: "/", element: <HomePage />, exact: true },
+  { element: <NotFoundPage /> },
 ];
 
 export default routes;
