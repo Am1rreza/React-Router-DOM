@@ -10,7 +10,6 @@ const Navigation = () => {
           <NavLink
             className={(navData) => (navData.isActive ? "activeTab2" : "")}
             to="/"
-            exact
           >
             Home
           </NavLink>
