@@ -1,6 +1,8 @@
-import { NavLink, withRouter } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 
 const Navigation = (props) => {
+  const params = useParams();
+
   return (
     <nav>
       <ul>
@@ -34,4 +36,4 @@ const Navigation = (props) => {
   );
 };
 
-export default withRouter(Navigation);
+export default Navigation;
