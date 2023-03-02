@@ -11,7 +11,7 @@ const routes = [
   { path: "/blogs", element: <BlogPage /> },
   { path: "/post/:id?", element: <PostPage /> },
   { path: "/about-us", element: <AboutUsPage /> },
-  { path: "/profile", element: <ProfilePage /> },
+  { path: "/profile/*", element: <ProfilePage /> },
   { path: "/", element: <HomePage />, exact: true },
   { element: <NotFoundPage /> },
 ];

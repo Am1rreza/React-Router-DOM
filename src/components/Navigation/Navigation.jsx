@@ -44,7 +44,7 @@ const Navigation = () => {
             className={(navData) => (navData.isActive ? "activeTab2" : "")}
             to="/post"
           >
-            Post
+            Posts
           </NavLink>
         </li>
       </ul>

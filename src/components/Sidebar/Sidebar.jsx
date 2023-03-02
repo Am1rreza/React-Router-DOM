@@ -5,12 +5,18 @@ const Sidebar = () => {
     <aside className="aside">
       <ul>
         <li>
-          <NavLink activeClassName="activeTab" to={"/profile/downloads"}>
+          <NavLink
+            className={(navData) => (navData.isActive ? "activeTab" : "")}
+            to={"/profile/downloads"}
+          >
             Downloads
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="activeTab" to={"/profile/dashboard"}>
+          <NavLink
+            className={(navData) => (navData.isActive ? "activeTab" : "")}
+            to={"/profile/dashboard"}
+          >
             Dashboard
           </NavLink>
         </li>

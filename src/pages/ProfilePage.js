@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Dashboard from "../components/Dashboard/Dashboard";
 import Downloads from "../components/Downloads/Downloads";
 import Sidebar from "../components/Sidebar/Sidebar";
@@ -8,8 +8,10 @@ const ProfilePage = () => {
     <>
       <h2 style={{ padding: "1rem" }}>Wellcome to the Profile Page</h2>
       <Sidebar />
-      <Route path={"/profile/dashboard"} component={Dashboard} />
-      <Route path={"/profile/downloads"} component={Downloads} />
+      <Routes>
+        <Route path={"/dashboard"} element={<Dashboard />} />
+        <Route path={"/downloads"} element={<Downloads />} />
+      </Routes>
     </>
   );
 };
